@@ -1,11 +1,17 @@
 // src/router/adminRoutes.js
-import AdminPage from "@/views/admin/AdminPage.vue";
+import AdminLayout from "@/views/admin/layouts/AdminLayout.vue";
+import DashboardPage from "@/views/admin/DashboardPage.vue";
 
 const AdminRoutes = [
     {
-        path: '/admin/dashboard',
-        name: 'AdminDashboard',
-        component: () => AdminPage
+        path: "/admin",
+        redirect: "/admin/dashboard",
+        name: "Admin",
+        component:  AdminLayout,
+        children: [
+            {path: "/admin/dashboard",name:"AdminDashboard", component:  DashboardPage},
+
+        ]
     },
     // Other admin routes
 ];

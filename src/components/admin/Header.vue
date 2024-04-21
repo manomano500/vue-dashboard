@@ -3,8 +3,8 @@
 </script>
 
 <template>
-  <div class="bg-red-500 w-full">
-    <h1>Admin Page</h1>
+  <div class="bg-white shadow px-4 py-7">
+    <h1>Welcome Jaber</h1>
   </div>
 </template>
 
