@@ -13,7 +13,3 @@ export default {
   <!--  </AdminLayout>-->
 
 </template>
-
-<style scoped>
-
-</style>

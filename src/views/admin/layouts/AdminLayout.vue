@@ -16,7 +16,7 @@
 <script>
 
 import SideBar from "@/components/admin/SideBar.vue";
-import Header from "@/components/admin/Header.vue";
+import Header from "@/components/admin/NavBar.vue";
 
 export default {
   name: 'AdminLayout',
@@ -24,6 +24,3 @@ export default {
 };
 </script>
 
-<style scoped>
-/* Add your custom styles here if needed */
-</style>

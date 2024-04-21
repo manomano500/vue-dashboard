@@ -84,7 +84,7 @@
 <script>
 
 
-import Header from "@/components/admin/Header.vue";
+import Header from "@/components/admin/NavBar.vue";
 
 export default {
   name: 'SideBar',

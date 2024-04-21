@@ -1,6 +1,4 @@
-<script setup>
 
-</script>
 
 <template>
   <div class="bg-white shadow px-4 py-7">
@@ -8,6 +6,3 @@
   </div>
 </template>
 
-<style scoped>
-
-</style>
