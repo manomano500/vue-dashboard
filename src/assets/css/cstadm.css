@@ -1,0 +1,18 @@
+/* custom. */
+
+
+.side-bar-button {
+    @apply flex items-center py-3 px-4 space-x-2 rounded text-gray-800 ;
+}
+
+.side-bar-button:hover {
+    @apply bg-gray-300 transition duration-100;
+}
+
+.side-bar-button-icon {
+    @apply w-5 h-5 m-2;
+}
+
+.no-scroll {
+    scrollbar-width: none;
+}
