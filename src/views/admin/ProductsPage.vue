@@ -13,18 +13,18 @@ export default {
 
 
 
-    <h1>Dashboard11111111111111</h1>
-    <h1>Dashboard</h1>
-    <h1>Dashboard</h1>
-    <h1>Dashboard</h1>
-    <h1>Dashboard</h1>
-    <h1>Dashboard</h1>
-    <h1>Dashboard</h1>
-    <h1>Dashboard</h1>
-    <h1>Dashboard</h1>
-    <h1>Dashboard</h1>
-    <h1>Dashboard</h1>
-    <h1>Dashboard</h1>
+    <h1>product page</h1>
+    <h1>Products</h1>
+    <h1>Products</h1>
+    <h1>Products</h1>
+    <h1>Products</h1>
+    <h1>Products</h1>
+    <h1>Products</h1>
+    <h1>Products</h1>
+    <h1>Products</h1>
+    <h1>Products</h1>
+    <h1>Products</h1>
+    <h1>Products</h1>
     <h1>Dashboard</h1>
     <h1>Dashboard</h1>
     <h1>Dashboard</h1>

@@ -1,50 +1,45 @@
 <template>
+  <div class="flex h-screen">
     <!-- Sidebar -->
 
-    <div class="no-scroll  flex">
+    <div class=" overflow-y-auto hidden sm:block " :style="{width :sidebarWidth}" >
+      <SideBar />
+    </div>
 
+    <div class="flex flex-col flex-1 shadow-2xl">
+      <!-- Navbar -->
+      <NavBar  />
 
-<!--      sid-->
-<div class="overflow-y-scroll h-screen">
-
-  <SideBar/>
-</div>
-
-
-<!--      rigth-->
-      <div class=" ">
-
-        <div class=" " >
-          <NavBar />
-        </div>
-
-          <div class="h-screen overflow-y-scroll ">
-
-            <router-view/>
-          </div>
-
-
+      <!-- Content Section -->
+      <div class="flex-1 p-4 overflow-y-auto bg-gray-200 shadow-2xl ">
+        <router-view />
       </div>
-
-
-
+    </div>
   </div>
 </template>
 
-<script>
 
+
+
+
+
+<script>
 import SideBar from "@/components/admin/SideBar.vue";
 import NavBar from "@/components/admin/NavBar.vue";
+import {sidebarWidth, toggleSidebar} from "@/views/admin/state";
 
 export default {
   name: 'AdminLayout',
-  components: {NavBar , SideBar},
+  methods: {toggleSidebar},
+  computed: {
+    sidebarWidth() {
+      return sidebarWidth
+    }
+  },
+  components: {NavBar, SideBar},
 };
 </script>
 
-<style>
+<style scoped>
 
-.no-scroll {
-  scrollbar-width: none;
-}
 </style>
