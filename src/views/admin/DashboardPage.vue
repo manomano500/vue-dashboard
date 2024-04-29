@@ -1,8 +1,12 @@
 <script >
 
+import {onMounted, ref} from "vue";
+import axiosClient from "@/axios";
+
 export default {
   name: 'DashboardPage'
 }
+
 </script>
 
 <template>

@@ -1,5 +1,5 @@
 .side-bar-button {
-    @apply flex items-center py-3 px-4 space-x-2 rounded   ;
+    @apply flex items-center py-3 px-4  space-x-2 rounded 
 }
 .side-bar-button-text{
     @apply text-white

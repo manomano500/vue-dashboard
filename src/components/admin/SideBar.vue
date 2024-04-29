@@ -99,8 +99,6 @@
 <script>
 import NavBar from "@/components/admin/NavBar.vue";
 import {collapsed, toggleSidebar, sidebarWidth} from "@/views/admin/state";
-
-
 export default {
 
   name: 'SideBar',
