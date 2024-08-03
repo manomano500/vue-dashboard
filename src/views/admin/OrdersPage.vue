@@ -1,7 +1,7 @@
 <script >
 
 export default {
-  name: 'DashboardPage'
+  name: 'ordersPage'
 }
 </script>
 
@@ -13,28 +13,85 @@ export default {
 
 
 
-    <h1>Vendors page</h1>
-    <h1>Vendors page</h1>
-    <h1>Vendors page</h1>
-    <h1>Vendors page</h1>
-    <h1>Vendors page</h1>
-    <h1>Vendors page</h1>
-    <h1>Vendors page</h1>
-    <h1>Vendors page</h1>
-    <h1>Vendors page</h1>
-    <h1>Vendors page</h1>
-    <h1>Vendors page</h1>
-    <h1>Vendors page</h1>
-    <h1>Vendors page</h1>
-    <h1>Vendors page</h1>
-    <h1>Vendors page</h1>
-    <h1>Vendors page</h1>
-    <h1>Vendors page</h1>
-    <h1>Vendors page</h1>
-    <h1>Vendors page</h1>
-    <h1>Vendors page</h1>
 
 
+
+    <h1>orders11111111111111</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>ordersEEEEEEEEEEEEEEEEnd</h1>
+
+    <h1>Dashboard11111111111111</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
     <h1>DashboardEEEEEEEEEEEEEEEEnd</h1>
   </div>
   <!--  </AdminLayout>-->

@@ -1,7 +1,6 @@
 // src/router/index.js
 import { createRouter, createWebHistory } from 'vue-router';
-import VendorRoutes from './vendorRoutes';
-import CustomerRoutes from './customerRoutes';
+
 import AuthLayout from "@/views/admin/layouts/AuthLayout.vue";
 import Login from "@/views/admin/auth/Login.vue";
 import Signup from "@/views/admin/auth/Signup.vue";
@@ -11,10 +10,31 @@ import ProductsPage from "@/views/admin/ProductsPage.vue";
 import VendorsPage from "@/views/admin/VendorsPage.vue";
 import ShipmentcentersPage from "@/views/admin/ShipmentcentersPage.vue";
 import OrdersPage from "@/views/admin/OrdersPage.vue";
+import VendorPage from "@/views/vendor/VendorPage.vue";
+import CustomerPage from "@/views/coustomer/CustomerPage.vue";
 
 const routes = [
-    ...VendorRoutes,
-    ...CustomerRoutes,
+
+    // vendor routes
+    {
+        path: '/vendor/dashboard',
+        name: 'VendorDashboard',
+        component: () => VendorPage
+    },
+
+
+
+    // csutomer routes
+
+    {
+        path: '/customer/dashboard',
+        name: 'CustomerDashboard',
+        component: () => CustomerPage
+    },
+
+
+
+    // admin routes
     {
         path: "/admin",
         redirect: "/admin/dashboard",
@@ -32,6 +52,9 @@ const routes = [
         ],
 
     },
+
+
+    // auth
     {
         path: '/auth',
         redirect: 'auth/login',

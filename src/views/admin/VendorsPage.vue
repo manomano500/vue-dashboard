@@ -6,14 +6,94 @@ export default {
 </script>
 
 <template>
-  <div class="bg-white h-full rounded shadow p-6 ">
-
   <!--  <AdminLayout>-->
+  <div class="bg-white rounded shadow p-6 ">
 
 
 
 
-    <!--  </AdminLayout>-->
+
+
+
+
+    <h1>orders11111111111111</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>orders</h1>
+    <h1>ordersEEEEEEEEEEEEEEEEnd</h1>
+
+    <h1>Dashboard11111111111111</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>Dashboard</h1>
+    <h1>DashboardEEEEEEEEEEEEEEEEnd</h1>
   </div>
+  <!--  </AdminLayout>-->
 
 </template>

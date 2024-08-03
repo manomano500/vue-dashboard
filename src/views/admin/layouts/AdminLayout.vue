@@ -20,7 +20,7 @@
 <script>
 import SideBar from "@/components/admin/SideBar.vue";
 import NavBar from "@/components/admin/NavBar.vue";
-import { collapsed, toggleSidebar, sidebarWidth } from "@/views/admin/state";
+import { collapsed, toggleSidebar, sidebarWidth } from "@/views/admin/layouts/state";
 import { onMounted, ref, computed } from "vue";
 
 export default {

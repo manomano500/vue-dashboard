@@ -2,8 +2,8 @@
   <div class="h-full" :style="{ backgroundColor: 'var(--secondary-bg)' }">
     <div class="flex flex-col px-2 space-y-6 overflow-y-auto h-screen no-scroll-bar transition-all duration-300 ease-in-out"
          :class="{'w-16': collapsed, 'w-64': !collapsed}">
-      <div v-if="!collapsed" class="mt-4">
-        <span class="text-xl font-extrabold" :style="{ color: 'var(--primary-text)' }">Admin Dashboard</span>
+      <div v-if="!collapsed" class="mt-4 text-center">
+        <span class="text-xl font-extrabold text-center" :style="{ color: 'var(--primary-text)' }">Dashboard</span>
       </div>
 
       <nav class="flex flex-col items-center">
@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import { collapsed } from "@/views/admin/state";
+import { collapsed } from "@/views/admin/layouts/state";
 import { defineComponent } from 'vue';
 
 export default defineComponent({
