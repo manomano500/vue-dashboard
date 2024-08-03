@@ -6,37 +6,14 @@ export default {
 </script>
 
 <template>
+  <div class="bg-white h-full rounded shadow p-6 ">
+
   <!--  <AdminLayout>-->
-  <div class="bg-white rounded shadow p-6 ">
 
 
 
 
-
-    <h1>Vendors page</h1>
-    <h1>Vendors page</h1>
-    <h1>Vendors page</h1>
-    <h1>Vendors page</h1>
-    <h1>Vendors page</h1>
-    <h1>Vendors page</h1>
-    <h1>Vendors page</h1>
-    <h1>Vendors page</h1>
-    <h1>Vendors page</h1>
-    <h1>Vendors page</h1>
-    <h1>Vendors page</h1>
-    <h1>Vendors page</h1>
-    <h1>Vendors page</h1>
-    <h1>Vendors page</h1>
-    <h1>Vendors page</h1>
-    <h1>Vendors page</h1>
-    <h1>Vendors page</h1>
-    <h1>Vendors page</h1>
-    <h1>Vendors page</h1>
-    <h1>Vendors page</h1>
-
-
-    <h1>DashboardEEEEEEEEEEEEEEEEnd</h1>
+    <!--  </AdminLayout>-->
   </div>
-  <!--  </AdminLayout>-->
 
 </template>

@@ -1,0 +1,36 @@
+/*
+!* themes.css *!
+:root {
+    --primary-bg: #ffffff;
+    --secondary-bg: #f3f4f6;
+    --primary-text: #000000;
+    --secondary-text: #4b5563;
+    --accent-color: #ec4899;
+    --hover-color: #db2777;
+}
+
+.dark-theme {
+    --primary-bg: #1f2937;
+    --secondary-bg: #111827;
+    --primary-text: #ffffff;
+    --secondary-text: #9ca3af;
+    --accent-color: #ec4899;
+    --hover-color: #db2777;
+}*/
+:root {
+    --primary-bg: #f9fafb; /* Light, clean background color */
+    --secondary-bg: #e5e7eb; /* Softer, neutral secondary background */
+    --primary-text: #1f2937; /* Darker text for better contrast */
+    --secondary-text: #6b7280; /* More muted secondary text color */
+    --accent-color: #3b82f6; /* Modern blue accent color */
+    --hover-color: #2563eb; /* Slightly darker blue for hover effects */
+}
+
+.dark-theme {
+    --primary-bg: #111827; /* Darker background for a sleeker dark mode */
+    --secondary-bg: #1f2937; /* Slight contrast for elements in dark mode */
+    --primary-text: #f3f4f6; /* Lighter text for dark backgrounds */
+    --secondary-text: #d1d5db; /* Softer text color for dark mode */
+    --accent-color: #3b82f6; /* Consistent blue accent for dark mode */
+    --hover-color: #2563eb; /* Matching hover effect for dark mode */
+}

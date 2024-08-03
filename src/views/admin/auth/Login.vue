@@ -68,17 +68,23 @@ const form =ref( {
   // remember: false
 })
 
+const getToken =async ()=>{
+
+  await axiosClient.get('/sanctum/csrf-cookie')
+}
 let errMsg=ref('')
 const handleLogin = async ()=>{
+  await getToken()
   await axiosClient.post('/login',{
     email: form.value.email,
     password: form.value.password,
     // remember: form.value.remember
   }).then((res)=>{
-    console.log(res)
-    // store.commit('setUser', res.data.user)
     // router.push('/admin')
+    console.log(res)
+
   }).catch((err)=>{
+    console.log(err)
     errMsg.value = err.response.data.message
   })
 }

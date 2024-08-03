@@ -1,51 +1,59 @@
 <template>
-  <div class="flex h-screen">
-    <!-- Sidebar -->
+  <div class="flex h-screen" :class="{ 'dark-theme': isDarkTheme }">
+    <transition name="slide">
+      <div v-if="!collapsed || !isMobile" class="overflow-y-auto no-scroll-bar"
+           :class="{'fixed inset-0 z-50': isMobile}"
+           :style="{ width: sidebarWidth, backgroundColor: 'var(--secondary-bg)' }">
+        <SideBar />
+      </div>
+    </transition>
 
-    <div class=" overflow-y-auto hidden sm:block " :style="{width :sidebarWidth}" >
-      <SideBar />
-    </div>
-
-    <div class="flex flex-col flex-1 shadow-2xl">
-      <!-- Navbar -->
-      <NavBar  />
-
-      <!-- Content Section -->
-      <div class="flex-1 p-4 overflow-y-auto bg-gray-200 shadow-2xl ">
+    <div class="flex flex-col flex-1" :style="{ backgroundColor: 'var(--primary-bg)' }">
+      <NavBar @toggle-sidebar="toggleSidebar" @toggle-theme="toggleTheme" />
+      <div class="flex-1 p-2 overflow-y-auto" :style="{ backgroundColor: 'var(--secondary-bg)' }">
         <router-view />
       </div>
     </div>
   </div>
 </template>
 
-
-
-
-
-
 <script>
 import SideBar from "@/components/admin/SideBar.vue";
 import NavBar from "@/components/admin/NavBar.vue";
-import {sidebarWidth, toggleSidebar} from "@/views/admin/state";
-import {onMounted, ref} from "vue";
-import axiosClient from "@/axios";
+import { collapsed, toggleSidebar, sidebarWidth } from "@/views/admin/state";
+import { onMounted, ref, computed } from "vue";
 
-
-// onMounted( async ()=>{
-//   const data = await axiosClient().get('/api /user');
-//   console.log("data:", data)
-//   // user.value = data.data;
-//
-// })
 export default {
   name: 'AdminLayout',
-  methods: {toggleSidebar},
-  computed: {
-    sidebarWidth() {
-      return sidebarWidth
-    }
-  },
-  components: {NavBar, SideBar},
+  components: { NavBar, SideBar },
+  setup() {
+    const isMobile = ref(window.innerWidth < 640);
+    const isDarkTheme = ref(false);
+
+    const handleResize = () => {
+      isMobile.value = window.innerWidth < 640;
+    };
+
+    const toggleTheme = () => {
+      isDarkTheme.value = !isDarkTheme.value;
+    };
+
+    onMounted(() => {
+      window.addEventListener('resize', handleResize);
+    });
+
+    return {
+      collapsed,
+      toggleSidebar,
+      sidebarWidth,
+      isMobile,
+      isDarkTheme,
+      toggleTheme
+    };
+  }
 };
 </script>
 
+<style scoped>
+
+</style>

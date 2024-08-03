@@ -1,14 +1,26 @@
-import axios from "axios";
-import {store} from "core-js/internals/reflect-metadata";
+import Axios from 'axios';
 
-const axiosClient = axios.create({
-    baseURL: "http://localhost:8000/",
+const axiosClient = Axios.create({
+    baseURL: 'http://localhost:8000',
+    headers:{
+        'Content-Type':'application/json',
+        'Accept':'application/json',
+
+
+    },
+    withCredentials:true,
+
 })
-axiosClient.defaults.withCredentials = true;
-axiosClient.defaults.withXSRFToken = true;
 
-axiosClient.interceptors.request.use(config=>{
-    // config.headers.Authorization = `Bearer ${store.state.user.token}`
-    return config
+axiosClient.interceptors.request.use(config => {
+    const token = localStorage.getItem('token');
+    if (token) {
+        config.headers.Authorization = `Bearer ${token}`;
+    }
+    return config;
+}, error => {
+    console.log(error)
+    return Promise.reject(error);
 });
+
 export default axiosClient;

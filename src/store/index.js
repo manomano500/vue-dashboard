@@ -1,32 +1,49 @@
 import {createStore} from "vuex";
 import axiosClient from "@/axios";
+import products from "@/store/products";
 
 
 const store = createStore({
 
     state: {
-        user: {
-            data: {},
-            token: sessionStorage.getItem('token')
-        },
-        errors: []
+        authUser: null,
+        // user: {
+        //     data: {},
+        //     token: sessionStorage.getItem('token') || null
+        // },
+        // errors: []
 
 
     },
+    getters: {
+        user: state => state.authUser,
+    },
     mutations: {
-        setUser: (state, userData) => {
-            state.user.data = userData;
-            state.user.token = userData.token;
-            sessionStorage.setItem('token', userData.token)
-        },
-        logout: (state) => {
-            state.user.data = {};
-            sessionStorage.removeItem('token'); // This line removes the token from the sessionStorage
-            state.user.token = null
-        },
+        // setUser: (state, userData) => {
+        //     state.user.data = userData;
+        //     state.user.token = userData.token;
+        //     sessionStorage.setItem('token', userData.token)
+        // },
+        // logout: (state) => {
+        //     state.user.data = {};
+        //     sessionStorage.removeItem('token'); // This line removes the token from the sessionStorage
+        //     state.user.token = null
+        // },
 
     },
     actions: {
+        async getToken(){
+          const token = await axiosClient.get('/sanctum/csrf-cookie')
+            return token
+        },
+        async getUser(){
+            await this.dispatch('getToken').then((red) => {
+                 console.log("red" ,red)
+             })
+            // console.log(t)
+            // const {data} = await axiosClient.get('/api/user')
+            // this.authUser = data.data
+        },
         register: ({commit}, user) => {
             try {
                 return axiosClient.post('/register', user)
@@ -37,7 +54,7 @@ const store = createStore({
 
             }catch (e) {
              console.log(e)
-                store.state.errors.push(e)
+                store.state.errors = e.response.data.errors
             }
 
         },
@@ -56,7 +73,9 @@ const store = createStore({
                 })
         }
     },
-    modules: {}
+    modules: {
+        products
+    }
 
 
 

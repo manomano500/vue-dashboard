@@ -1,57 +1,46 @@
-<script >
+  <template>
+    <!--  <AdminLayout>-->
+    <div class="bg-white rounded shadow p-6 ">
 
-export default {
-  name: 'DashboardPage'
-}
+
+
+
+
+
+
+      <h1>SHipmentCenters</h1>
+      <h1>SHipmentCenters</h1>
+      <h1>SHipmentCenters</h1>
+      <h1>SHipmentCenters</h1>
+      <h1>SHipmentCenters</h1>
+      <h1>SHipmentCenters</h1>
+      <h1>SHipmentCenters</h1>
+      <h1>SHipmentCenters</h1>
+      <h1>SHipmentCenters</h1>
+      <h1>SHipmentCenters</h1>
+      <h1>SHipmentCenters</h1>
+      <h1>SHipmentCenters</h1>
+      <h1>SHipmentCenters</h1>
+      <h1>SHipmentCenters</h1>
+      <h1>SHipmentCenters</h1>
+      <h1>SHipmentCenters</h1>
+      <h1>SHipmentCenters</h1>
+      <h1>SHipmentCenters</h1>
+      <h1>SHipmentCenters</h1>
+      <h1>SHipmentCenters</h1>
+      <h1>SHipmentCenters</h1>
+      <h1>SHipmentCenters</h1>
+      <h1>SHipmentCenters</h1>
+      <h1>DashboardEEEEEEEEEEEEEEEEnd</h1>
+    </div>
+    <!--  </AdminLayout>-->
+
+  </template>
+
+
+
+<style scoped>
+/* Add your component-specific styles here */
+</style>
+<script setup lang="ts">
 </script>
-
-<template>
-  <!--  <AdminLayout>-->
-  <div class="bg-white rounded shadow p-6 ">
-
-
-
-
-
-    <h1>product page</h1>
-    <h1>Products</h1>
-    <h1>Products</h1>
-    <h1>Products</h1>
-    <h1>Products</h1>
-    <h1>Products</h1>
-    <h1>Products</h1>
-    <h1>Products</h1>
-    <h1>Products</h1>
-    <h1>Products</h1>
-    <h1>Products</h1>
-    <h1>Products</h1>
-    <h1>Dashboard</h1>
-    <h1>Dashboard</h1>
-    <h1>Dashboard</h1>
-    <h1>Dashboard</h1>
-    <h1>Dashboard</h1>
-    <h1>Dashboard</h1>
-    <h1>Dashboard</h1>
-    <h1>Dashboard</h1>
-    <h1>Dashboard</h1>
-    <h1>Dashboard</h1>
-    <h1>Dashboard</h1>
-    <h1>Dashboard</h1>
-    <h1>Dashboard</h1>
-    <h1>Dashboard</h1>
-    <h1>Dashboard</h1>
-    <h1>Dashboard</h1>
-    <h1>Dashboard</h1>
-    <h1>Dashboard</h1>
-    <h1>Dashboard</h1>
-    <h1>Dashboard</h1>
-    <h1>Dashboard</h1>
-    <h1>Dashboard</h1>
-    <h1>Dashboard</h1>
-    <h1>Dashboard</h1>
-    <h1>Dashboard</h1>
-    <h1>DashboardEEEEEEEEEEEEEEEEnd</h1>
-  </div>
-  <!--  </AdminLayout>-->
-
-</template>
