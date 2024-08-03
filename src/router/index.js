@@ -1,40 +1,19 @@
 // src/router/index.js
 import { createRouter, createWebHistory } from 'vue-router';
 
-import AuthLayout from "@/views/admin/layouts/AuthLayout.vue";
-import Login from "@/views/admin/auth/Login.vue";
-import Signup from "@/views/admin/auth/Signup.vue";
-import AdminLayout from "@/views/admin/layouts/AdminLayout.vue";
-import DashboardPage from "@/views/admin/DashboardPage.vue";
-import ProductsPage from "@/views/admin/ProductsPage.vue";
-import VendorsPage from "@/views/admin/VendorsPage.vue";
-import ShipmentcentersPage from "@/views/admin/ShipmentcentersPage.vue";
-import OrdersPage from "@/views/admin/OrdersPage.vue";
-import VendorPage from "@/views/vendor/VendorPage.vue";
-import CustomerPage from "@/views/coustomer/CustomerPage.vue";
+import AuthLayout from "@/views/dashboard/layouts/AuthLayout.vue";
+import Login from "@/views/dashboard/auth/Login.vue";
+import Signup from "@/views/dashboard/auth/Signup.vue";
+import AdminLayout from "@/views/dashboard/layouts/AdminLayout.vue";
+import DashboardPage from "@/views/dashboard/DashboardPage.vue";
+import ProductsPage from "@/views/dashboard/ProductsPage.vue";
+import VendorsPage from "@/views/dashboard/VendorsPage.vue";
+import OrdersPage from "@/views/dashboard/OrdersPage.vue";
+
 
 const routes = [
 
-    // vendor routes
-    {
-        path: '/vendor/dashboard',
-        name: 'VendorDashboard',
-        component: () => VendorPage
-    },
-
-
-
-    // csutomer routes
-
-    {
-        path: '/customer/dashboard',
-        name: 'CustomerDashboard',
-        component: () => CustomerPage
-    },
-
-
-
-    // admin routes
+      // admin routes
     {
         path: "/admin",
         redirect: "/admin/dashboard",
@@ -45,7 +24,6 @@ const routes = [
             {path: "/admin/dashboard",name:"AdminDashboard", component:  DashboardPage},
             {path: "/admin/products",name:"Products", component:  ProductsPage},
             {path: "/admin/vendors",name:"Vendors", component:  VendorsPage},
-            {path: "/admin/shipment-centers",name:"shipment-centers", component:  ShipmentcentersPage},
             {path: "/admin/orders",name:"Orders", component:  OrdersPage},
             // {path: "/admin/test",name:"test", component:  OrdersPage},
 
