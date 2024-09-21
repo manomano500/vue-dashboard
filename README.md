@@ -9,10 +9,6 @@ This project is a Vue.js dashboard template styled with Tailwind CSS. It provide
 - **Vue Router Integration:** Seamless navigation between different pages of the dashboard.
 - **Tailwind CSS:** Utilizes Tailwind CSS for efficient styling and design consistency.
 
-## Live Demo
-
-You can view the live demo of the project [here](https://github.com/manomano500/vue-dashboard).
-
 ## Prerequisites
 
 - Node.js (version 12 or later)
@@ -24,3 +20,26 @@ You can view the live demo of the project [here](https://github.com/manomano500/
    ```bash
    git clone https://github.com/manomano500/vue-dashboard.git
    cd vue-dashboard
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
