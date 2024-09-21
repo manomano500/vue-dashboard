@@ -1,6 +1,5 @@
 import {createStore} from "vuex";
 import axiosClient from "@/axios";
-import products from "@/store/products";
 
 
 const store = createStore({
@@ -74,7 +73,6 @@ const store = createStore({
         }
     },
     modules: {
-        products
     }
 
 

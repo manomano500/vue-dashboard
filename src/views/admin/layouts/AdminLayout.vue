@@ -8,9 +8,9 @@
       </div>
     </transition>
 
-    <div class="flex flex-col flex-1" :style="{ backgroundColor: 'var(--primary-bg)' }">
+    <div class="flex flex-col flex-1 " :style="{ backgroundColor: 'var(--primary-bg)' }">
       <NavBar @toggle-sidebar="toggleSidebar" @toggle-theme="toggleTheme" />
-      <div class="flex-1 p-2 overflow-y-auto" :style="{ backgroundColor: 'var(--secondary-bg)' }">
+      <div class="flex-1  overflow-y-auto" :style="{ backgroundColor: 'var(--secondary-bg)' }">
         <router-view />
       </div>
     </div>

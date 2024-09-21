@@ -1,24 +1,23 @@
-import { fileURLToPath, URL } from 'node:url'
-
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import vueJsx from '@vitejs/plugin-vue-jsx'
-
-// https://vitejs.dev/config/
-export default defineConfig({
-    plugins: [
-        vue(),
-        vueJsx(),
-    ],
-
-    resolve: {
-        alias: {
-            '@': fileURLToPath(new URL('./src', import.meta.url))
-        }
+import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
+export default defineNuxtConfig({
+    //...
+    build: {
+        transpile: ['vuetify'],
     },
-
+    modules: [
+        (_options, nuxt) => {
+            nuxt.hooks.hook('vite:extendConfig', (config) => {
+                // @ts-expect-error
+                config.plugins.push(vuetify({ autoImport: true }))
+            })
+        },
+        //...
+    ],
+    vite: {
+        vue: {
+            template: {
+                transformAssetUrls,
+            },
+        },
+    },
 })
-module.exports = defineConfig({
-    devServer: {
-        port: 3000
-    }})

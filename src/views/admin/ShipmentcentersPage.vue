@@ -7,13 +7,13 @@ export default {
 
 <template>
   <!--  <AdminLayout>-->
-  <div class="bg-white rounded shadow p-6 ">
+  <div class="page-content">
 
 
 
 
 
-
+shipment center
 
 
     <h1>orders11111111111111</h1>

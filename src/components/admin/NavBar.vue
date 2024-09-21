@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center justify-between px-4 py-4" :style="{ backgroundColor: 'var(--primary-bg)', color: 'var(--primary-text)' }">
+  <div class="flex items-center justify-between  px-4 py-4" :style="{ backgroundColor: 'var(--primary-bg)', color: 'var(--primary-text)' }">
     <h1 class="m-2">Welcome Ramadan</h1>
     <div class="flex items-center ml-auto space-x-4">
       <button @click="$emit('toggle-sidebar')" class="text-current hover:text-gray-700 transition duration-200">

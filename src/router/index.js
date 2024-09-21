@@ -10,33 +10,18 @@ import ProductsPage from "@/views/admin/ProductsPage.vue";
 import VendorsPage from "@/views/admin/VendorsPage.vue";
 import ShipmentcentersPage from "@/views/admin/ShipmentcentersPage.vue";
 import OrdersPage from "@/views/admin/OrdersPage.vue";
-import VendorPage from "@/views/vendor/VendorPage.vue";
-import CustomerPage from "@/views/coustomer/CustomerPage.vue";
+
 
 const routes = [
 
-    // vendor routes
-    {
-        path: '/vendor/dashboard',
-        name: 'VendorDashboard',
-        component: () => VendorPage
-    },
 
 
-
-    // csutomer routes
-
-    {
-        path: '/customer/dashboard',
-        name: 'CustomerDashboard',
-        component: () => CustomerPage
-    },
 
 
 
     // admin routes
     {
-        path: "/admin",
+        path: "/",
         redirect: "/admin/dashboard",
         name: "Admin",
         // meta: { requiresAuth: true },

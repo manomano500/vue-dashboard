@@ -39,3 +39,7 @@
 .slide-leave-to {
     transform: translateX(-100%);
 }
+
+.page-content {
+    @apply bg-white rounded shadow p-6 m-3
+}

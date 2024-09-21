@@ -1,9 +1,9 @@
 <template>
   <!--  <AdminLayout>-->
-  <div class="bg-white rounded shadow p-6 ">
+  <div class="page-content">
 
 
-
+products
 
 
 
