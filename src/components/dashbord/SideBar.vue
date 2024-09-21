@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import { collapsed } from "@/views/admin/layouts/state";
+import { collapsed } from "@/views/dashboard/layouts/state";
 import { defineComponent } from 'vue';
 
 export default defineComponent({
@@ -32,7 +32,6 @@ export default defineComponent({
       { text: 'Dashboard', route: '/admin/dashboard', icon: 'DashboardIcon' },
       { text: 'Products', route: '/admin/products', icon: 'ProductIcon' },
       { text: 'Vendors', route: '/admin/vendors', icon: 'VendorIcon' },
-      { text: 'Shipment Centers', route: '/admin/shipment-centers', icon: 'ShipmentIcon' },
       { text: 'Orders', route: '/admin/orders', icon: 'OrderIcon' },
     ];
 
